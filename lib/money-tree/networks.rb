@@ -27,6 +27,18 @@ module MoneyTree
           compressed_wif_chars: %w(c),
           uncompressed_wif_chars: %w(9),
           protocol_version: 70001
+        },
+        dogecoin_testnet: {
+          address_version: '71',
+          p2sh_version: 'c4',
+          p2sh_char: '2',
+          privkey_version: 'f1',
+          privkey_compression_flag: '01',
+          extended_privkey_version: "0432a243",
+          extended_pubkey_version: "0432a9a8",
+          compressed_wif_chars: %w(c),
+          uncompressed_wif_chars: %w(9),
+          protocol_version: 70003
         }
       )
       hsh[:testnet3] = hsh[:bitcoin_testnet]
